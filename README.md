@@ -7,16 +7,16 @@
 ​
 ### Links and Resources
 * [submission PR](http://xyz.com)
-* [travis](http://xyz.com)
-* [back-end](http://xyz.com) (when applicable)
-* [front-end](http://xyz.com) (when applicable)
+<!-- * [travis](http://xyz.com) -->
+* [back-end](https://graphql-api-10.herokuapp.com/) (Heroku)
+<!-- * [front-end](https://graphql-api-10.herokuapp.com/) (Heroku) -->
 ​
 #### Documentation
-* [api docs](http://xyz.com) (API servers)
-* [jsdoc](http://xyz.com) (Server assignments)
-* [styleguide](http://xyz.com) (React assignments)
+* [graphql](https://graphql.org/learn/) (GraphQL API servers)
+* [jsdoc](https://jsdoc.app/about-getting-started.html (Commenting)
+<!-- * [styleguide](http://xyz.com) (React assignments) -->
 ​
-### Modules
+<!-- ### Modules
 #### `modulename.js`
 ##### Exported Values and Methods
 ​
@@ -24,7 +24,7 @@
 Usage Notes or examples
 ​
 ###### `bar(array) -> array`
-Usage Notes or examples
+Usage Notes or examples -->
 ​
 ### Setup
 #### `.env` requirements
@@ -50,10 +50,11 @@ Usage Notes or examples
 ​
 #### Running the app
 * `npm start`
-* Endpoint: `/foo/bar/`
-  * Returns a JSON object with abc in it.
-* Endpoint: `/bing/zing/`
-  * Returns a JSON object with xyz in it.
+* Endpoint: `/graphql`
+  * Returns a JSON object with things in it.
+  
+<!-- * Endpoint: `/bing/zing/`
+  * Returns a JSON object with xyz in it. -->
   
 #### Tests
 * No tests were required for this lab.
