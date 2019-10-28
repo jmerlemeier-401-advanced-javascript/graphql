@@ -13,10 +13,11 @@ const cors = require('cors');
 const morgan = require('morgan');
 
 // Esoteric Resources
-const errorHandler = require( `${cwd}/src/middleware/500.js`);
-const notFound = require( `${cwd}/src/middleware/404.js` );
-const v1Router = require( `${cwd}/src/api/v1.js` );
-const swagger = require(`${cwd}/src/api/swagger.js`);
+// const errorHandler = require( `${cwd}/src/middleware/500.js`);
+// const notFound = require( `${cwd}/src/middleware/404.js` );
+const v1Router = require( `${cwd}/api.js` );
+const graphqlHandler = require(`${cwd}/graphql.js`);
+// const swagger = require(`${cwd}/src/api/swagger.js`);
 
 // Prepare the express app
 const app = express();
@@ -29,14 +30,15 @@ app.use(express.json());
 app.use(express.urlencoded({extended:true}));
 
 // Static Routes
-app.use('/docs', express.static('docs'));
+// app.use('/docs', express.static('docs'));
 
 // Routes
 app.use(v1Router);
+app.use('/graphql', graphqlHandler);
 
-// Catchalls
-app.use(notFound);
-app.use(errorHandler);
+// // Catchalls
+// app.use(notFound);
+// app.use(errorHandler);
 
 /**
  * Start Server on specified port

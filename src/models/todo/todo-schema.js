@@ -1,8 +1,9 @@
 'use strict';
 
 const mongoose = require('mongoose');
-require('mongoose-schema-jsonschema')(mongoose);
+//instantiate-schema-jsonschema')(mongoose);
 
+//create mongoose model
 const todo = mongoose.Schema({
   text: { type:String, required:true },
   category: {type: String},
