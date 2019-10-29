@@ -17,7 +17,7 @@ const todoSchema = buildSchema(`
     text: Sting!
     category: String
     assignee: String!
-    difficulty: Int!
+    difficulty: Int! 
     complete: Boolean!
   }
   type Query {
